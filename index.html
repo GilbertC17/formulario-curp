@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="img/icon_logo.png">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <title>Validaciones TEC</title>
+</head>
+<body>
+
+  <div class="header_container">
+    <div class="img_header">
+      <img class="img_header1" src="img/logo.png" alt="logo">
+    </div>
+  </div>
+
+  <div class="title_container">
+    <div class="title_body">
+      <h1>Datos generales del alumno</h1>
+    </div>
+    <div class="line_gray">
+      <hr class="hr1">
+    </div>
+  </div>
+
+  <div class="body1_container">
+    <div class="text_curpcontainer">
+      <p class="title_curpcontainer">* Campos Obligatorios</p>
+      <p class="curp_curpcontainer">CURP:</p>
+      <div class="curp_container_box">
+        <div class="curp_inputbtn">
+          <input class="curp_input" type="text" name="CURP" placeholder="CURP">
+        </div>
+      </div>
+    </div>
+      <div class="box_curp">
+        <a href="https://www.gob.mx/curp/" target="_blank">
+        <div class="text_box">
+          <p>Consultar CURP</p>
+        </div>
+        <div class="icon_box">
+          <svg class="icon_box1 icon1" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+            <path d="M21 21l-6 -6" />
+          </svg>
+
+          <svg class="icon_box1 icon2" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+            <path d="M21 21l-6 -6" />
+          </svg>
+        </div>
+        </a>
+      </div>
+    </div>
+
+  <div class="body2_container" id="container_input">
+    <div class="part1_container">
+      <div class="text_partcontainer">
+        <p class="curp_curpcontainer">Nombre *:</p>
+        <div class="text_partcontainer_box">
+          <div>
+            <input class="text_part_input" id="name" type="text" name="Nombres" placeholder="Nombres">
+          </div>
+        </div>
+      </div>
+      <div class="text_partcontainer">
+        <p class="curp_curpcontainer">Correo Electrónico *:</p>
+        <div class="text_partcontainer_box">
+          <div>
+            <input class="text_part_input" id="email" type="text" name="Correo Electrónico" placeholder="Correo Electrónico">
+          </div>
+        </div>
+      </div>
+      <div class="text_partcontainer">
+        <p class="curp_curpcontainer">Teléfono Fijo:</p>
+        <div class="text_partcontainer_box">
+          <div>
+            <input class="text_part_input" type="text" name="Telefono Fijo" placeholder="Telefono Fijo">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="part2_container">
+      <div class="text_partcontainer">
+        <p class="curp_curpcontainer">Primer Apellido *:</p>
+        <div class="text_partcontainer_box">
+          <div>
+            <input class="text_part_input" id="last_name" type="text" name="Primer Apellido" placeholder="Primer Apellido">
+          </div>
+        </div>
+      </div>
+      <div class="text_partcontainer">
+        <p class="curp_curpcontainer">Sexo:</p>
+        <div class="text_partcontainer_box">
+          <div>
+            <select class="text_part_input" name="Sexo" id="Sexo">
+              <option value="Sexo">Selecciona el sexo</option>
+              <option value="Hombre">Hombre</option>
+              <option value="Mujer">Mujer</option>
+              <option value="No binario">No binario</option>
+              </select>
+          </div>
+        </div>
+      </div>
+      <div class="text_partcontainer">
+        <p class="curp_curpcontainer">Celular:</p>
+        <div class="text_partcontainer_box">
+          <div>
+            <input class="text_part_input" type="text" name="Celular" placeholder="Celular">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="part3_container">
+      <div class="text_partcontainer">
+        <p class="curp_curpcontainer">Segundo Apellido:</p>
+        <div class="text_partcontainer_box">
+          <div>
+            <input class="text_part_input" type="text" name="Segundo Apellido" placeholder="Segundo Apellido">
+          </div>
+        </div>
+      </div>
+      <div class="text_partcontainer">
+        <p class="curp_curpcontainer">Fecha De Nacimiento:</p>
+        <div class="text_partcontainer_box">
+          <div>
+            <input class="text_part_input" type="date" name="Fecha De Nacimiento" placeholder="dd/mm/aaaa">
+          </div>
+        </div>
+      </div>
+     </div>
+  </div>
+
+  <div class="body3_container">
+    <div class="text_partcontainer1">
+      <p class="curp_curpcontainer">Asunto *:</p>
+      <div class="text_partcontainer_box">
+        <div>
+          <textarea id="txt_affair" class="text_area_body3" name="asunto" id="" cols="30" rows="10"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="validate_btn" class="btn_container">
+    <div class="button_c">
+      <a type="button" class="btn_send">Enviar</a>
+    </div>
+  </div>
+
+
+<br><br><br>
+
+  <div class="footer_container">
+    <div class="text_footer">
+      <p>Gilberto Garza Castillo</p>
+      <p>7SB</p>
+      <p>Programación WEB</p>
+    </div>
+  </div>
+
+<script type="text/javascript">
+  $("#validate_btn").click(function(){
+    if ($("#name").val().trim() == '') {
+				alert("Introduce tu nombre ");
+				$("#name").focus();
+				return 0;
+    }
+
+    if ($("#email").val().trim() == '') {
+				alert("Introduce tu correo electrónico ");
+				$("#email").focus();
+				return 0;
+    }
+
+    if ($("#last_name").val().trim() == '') {
+				alert("Introduce tu primer apellido ");
+				$("#last_name").focus();
+				return 0;
+    }
+
+    if ($("#txt_affair").val().trim() == '') {
+				alert("Escribe el asunto ");
+				$("#txt_affair").focus();
+				return 0;
+    }
+  });
+</script>
+
+</body>
+</html>
